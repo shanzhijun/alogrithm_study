@@ -3,7 +3,7 @@ package com.alogrithm.sort;
 import org.junit.Test;
 
 /**
- * BubbleSort  冒泡排序
+ * BubbleSort  冒泡排序  时间复杂度 O(n^2)
  */
 public class BubbleSort extends BaseSort{
 
