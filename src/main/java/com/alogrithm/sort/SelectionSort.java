@@ -34,6 +34,28 @@ public class SelectionSort extends BaseSort {
         soutSortVlaue(arr);
     }
 
+
+    @Test
+    public void selectionSort2(){
+        int[] arr={13,1,2,14,5,3,1,39,4,22,11,19};
+
+        int minIndex=0;
+        for(int i=0;i<arr.length-1;i++){
+            minIndex=i;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[j]<arr[minIndex]){
+                    minIndex=j;
+                }
+            }
+            if(i!=minIndex){
+                arr[i]=arr[i]^arr[minIndex];
+                arr[minIndex]=arr[i]^arr[minIndex];
+                arr[i]=arr[i]^arr[minIndex];
+            }
+        }
+
+        soutSortVlaue(arr);
+    }
     /**
      * 增序排序
      */
