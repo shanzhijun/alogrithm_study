@@ -12,8 +12,7 @@ public class LinkListImpl {
             first = node;
         } else {
             //非首次插入节点，切换指针域
-            LinkNode firstNext = first;
-            node.setNext(firstNext);
+            node.setNext(first);
             first = node;
         }
     }
@@ -24,5 +23,17 @@ public class LinkListImpl {
             System.out.println(currentNode.getData());
             currentNode = currentNode.getNext();
         }
+    }
+
+    public LinkNode searchValue(int value){
+        LinkNode currentNode = first;
+        while(currentNode != null){
+            if(currentNode.getData()==value){
+                break;
+            }
+            currentNode = currentNode.getNext();
+        }
+
+        return currentNode;
     }
 }

@@ -13,5 +13,12 @@ public class LinkListImplTest {
         linkList.insert(node3);
 
         linkList.displayAll();
+
+        LinkNode node = linkList.searchValue(19);
+        if(node!=null){
+            System.out.println("找到"+node.getData());
+        }else{
+            System.out.println("没有找到");
+        }
     }
 }
