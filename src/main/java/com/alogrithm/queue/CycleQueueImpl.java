@@ -1,5 +1,8 @@
 package com.alogrithm.queue;
 
+/**
+ * 循环队列
+ */
 public class CycleQueueImpl {
 
     private int[] arr;
