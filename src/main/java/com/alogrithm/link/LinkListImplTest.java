@@ -12,13 +12,19 @@ public class LinkListImplTest {
         linkList.insert(node2);
         linkList.insert(node3);
 
+        System.out.println("----------------输出节点---------------");
         linkList.displayAll();
 
+        System.out.println("----------------查询节点---------------");
         LinkNode node = linkList.searchValue(19);
         if(node!=null){
             System.out.println("找到"+node.getData());
         }else{
             System.out.println("没有找到");
         }
+
+        System.out.println("----------------删除节点---------------");
+        linkList.removeValue(19);
+        linkList.displayAll();
     }
 }
