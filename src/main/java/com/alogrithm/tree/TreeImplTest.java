@@ -18,6 +18,9 @@ public class TreeImplTest {
         tree.insertNode(node4);
         tree.insertNode(node5);
 
+
+        tree.showTree();
+
         System.out.println("------------------查找结点-------------------");
 
         TreeNode treeNode = tree.searchNode(3);
@@ -52,6 +55,8 @@ public class TreeImplTest {
 
         System.out.println("-------------------后序遍历-----------------------");
         tree.postorderTraversal(tree.getRoot());
+
+
 
     }
 }

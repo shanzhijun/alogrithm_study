@@ -1,5 +1,7 @@
 package com.alogrithm.tree;
 
+import java.util.Stack;
+
 /**
  * 二叉树的实现
  */
@@ -228,5 +230,53 @@ public class TreeImpl {
             treeNode.display();
         }
     }
-}
 
+    /**
+     * 展示树状结构
+     */
+    public void showTree(){
+        Stack<TreeNode> globalStack=new Stack();
+        globalStack.push(root);
+        int nBlanks=32;
+        boolean isRowEmpty=false;
+
+        System.out.println("--------------------");
+
+        while(isRowEmpty==false){
+            Stack<TreeNode>  localStack=new Stack();
+            isRowEmpty=true;
+            for(int j=0;j<nBlanks;j++){
+                System.out.print(" ");
+            }
+            while(globalStack.isEmpty()==false){
+                TreeNode tmp=globalStack.pop();
+                if(tmp!=null){
+                    System.out.print(tmp.getKeyData());
+                    localStack.push(tmp.getLeftNode());
+                    localStack.push(tmp.getRightNode());
+
+                    if(tmp.getLeftNode()!=null || tmp.getRightNode()!=null){
+                        isRowEmpty=false;
+                    }
+                }else{
+                    System.out.print("--");
+                    localStack.push(null);
+                    localStack.push(null);
+                }
+
+                for(int j=0;j<nBlanks*2-2;j++){
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println();
+            nBlanks/=2;
+            while(localStack.isEmpty()==false){
+                globalStack.push(localStack.pop());
+            }
+        }
+        System.out.println("----------------");
+
+    }
+
+}
