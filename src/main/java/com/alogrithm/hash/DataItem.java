@@ -1,4 +1,4 @@
-package com.alogrithm.hash.linerProbingHash;
+package com.alogrithm.hash;
 
 /**
  * 数据项

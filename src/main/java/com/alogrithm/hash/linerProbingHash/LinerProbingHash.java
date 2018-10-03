@@ -1,5 +1,7 @@
 package com.alogrithm.hash.linerProbingHash;
 
+import com.alogrithm.hash.DataItem;
+
 /**
  * 线性探测hash表实现
  */

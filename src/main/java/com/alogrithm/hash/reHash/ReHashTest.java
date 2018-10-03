@@ -1,16 +1,17 @@
-package com.alogrithm.hash.linerProbingHash;
+package com.alogrithm.hash.reHash;
 
 import com.alogrithm.hash.DataItem;
+import com.alogrithm.hash.linerProbingHash.LinerProbingHash;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class LinerProbingHashTest {
+public class ReHashTest {
     public static void main(String[] args) throws IOException{
         int value;
         DataItem dataItem;
-        LinerProbingHash linerProbingHash=new LinerProbingHash(10);
+        ReHashImpl reHashImpl=new ReHashImpl(10);
         while(true){
             System.out.println("输入操作");
 
@@ -18,18 +19,18 @@ public class LinerProbingHashTest {
 
             switch (choice){
                 case 's':
-                    linerProbingHash.display();
+                    reHashImpl.display();
                     break;
                 case 'i':
                     System.out.println("输入插入的值");
                     value=getInt();
                     dataItem=new DataItem(value);
-                    linerProbingHash.insert(dataItem);
+                    reHashImpl.insert(dataItem);
                     break;
                 case 'f':
                     System.out.println("输入查找的值");
                     value=getInt();
-                    dataItem = linerProbingHash.find(value);
+                    dataItem = reHashImpl.find(value);
                     if(dataItem!=null){
                         System.out.println("找到了数据项value="+dataItem.getKey());
                     }else{
