@@ -1,8 +1,9 @@
-package com.alogrithm.sort;
+package com.alogrithm.sort.searchInsert;
 
+import com.alogrithm.sort.BaseSort;
 import org.junit.Test;
 
-public class SearchInsertSort extends BaseSort{
+public class SearchInsertSort extends BaseSort {
 
     @Test
     public void searchInsertSort(){
