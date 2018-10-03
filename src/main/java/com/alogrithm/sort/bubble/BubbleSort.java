@@ -1,11 +1,12 @@
-package com.alogrithm.sort;
+package com.alogrithm.sort.bubble;
 
+import com.alogrithm.sort.BaseSort;
 import org.junit.Test;
 
 /**
  * BubbleSort  冒泡排序  时间复杂度 O(n^2)
  */
-public class BubbleSort extends BaseSort{
+public class BubbleSort extends BaseSort {
 
     /**
      * 一个没有顺序的整数数据，按照从大到小排序

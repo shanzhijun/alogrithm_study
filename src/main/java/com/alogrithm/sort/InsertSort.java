@@ -1,5 +1,6 @@
 package com.alogrithm.sort;
 
+import com.alogrithm.sort.BaseSort;
 import org.junit.Test;
 
 /**
