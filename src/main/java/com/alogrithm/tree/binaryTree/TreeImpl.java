@@ -1,4 +1,4 @@
-package com.alogrithm.tree;
+package com.alogrithm.tree.binaryTree;
 
 import java.util.Stack;
 
