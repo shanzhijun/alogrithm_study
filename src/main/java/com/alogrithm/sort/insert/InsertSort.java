@@ -1,4 +1,4 @@
-package com.alogrithm.sort;
+package com.alogrithm.sort.insert;
 
 import com.alogrithm.sort.BaseSort;
 import org.junit.Test;
