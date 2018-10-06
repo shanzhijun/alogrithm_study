@@ -1,5 +1,7 @@
 package com.alogrithm.griphic.undirectedGraph;
 
+import com.alogrithm.griphic.GraphicNode;
+
 /**
  * 图的实现
  */
