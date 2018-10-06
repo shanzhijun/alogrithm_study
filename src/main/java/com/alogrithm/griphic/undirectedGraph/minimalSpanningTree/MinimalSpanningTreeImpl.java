@@ -1,4 +1,4 @@
-package com.alogrithm.griphic.minimalSpanningTree;
+package com.alogrithm.griphic.undirectedGraph.minimalSpanningTree;
 
 import com.alogrithm.griphic.undirectedGraph.dfs_impl.DfsGraphicImpl;
 

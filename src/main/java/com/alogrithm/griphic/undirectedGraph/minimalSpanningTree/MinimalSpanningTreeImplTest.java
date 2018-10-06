@@ -1,4 +1,4 @@
-package com.alogrithm.griphic.minimalSpanningTree;
+package com.alogrithm.griphic.undirectedGraph.minimalSpanningTree;
 
 public class MinimalSpanningTreeImplTest {
     public static void  main(String[] args){

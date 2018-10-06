@@ -1,7 +1,5 @@
 package com.alogrithm.griphic.directedGraph;
 
-import com.alogrithm.griphic.minimalSpanningTree.MinimalSpanningTreeImpl;
-
 public class DirectedGraphImplTest {
 
     public static void  main(String[] args){
