@@ -6,7 +6,7 @@ import com.alogrithm.griphic.GraphicImpl;
  * 深度优先搜索
  */
 public class DfsGraphicImpl extends GraphicImpl {
-    private DfsStack theStack;
+    public DfsStack theStack;
 
     public DfsGraphicImpl(){
         theStack = new DfsStack(MAX_SIZE);
