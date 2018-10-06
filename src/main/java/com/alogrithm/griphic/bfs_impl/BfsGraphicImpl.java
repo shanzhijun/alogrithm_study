@@ -1,6 +1,6 @@
 package com.alogrithm.griphic.bfs_impl;
 
-import com.alogrithm.griphic.GraphicImpl;
+import com.alogrithm.griphic.undirectedGraph.GraphicImpl;
 
 /**
  * 广度优先搜索实现

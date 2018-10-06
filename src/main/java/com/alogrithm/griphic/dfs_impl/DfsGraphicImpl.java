@@ -1,6 +1,6 @@
 package com.alogrithm.griphic.dfs_impl;
 
-import com.alogrithm.griphic.GraphicImpl;
+import com.alogrithm.griphic.undirectedGraph.GraphicImpl;
 
 /**
  * 深度优先搜索

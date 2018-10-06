@@ -1,8 +1,6 @@
 package com.alogrithm.griphic.directedGraph;
 
-import com.alogrithm.griphic.GraphicNode;
-
-import javax.swing.*;
+import com.alogrithm.griphic.undirectedGraph.GraphicNode;
 
 /**
  * 有向图实现

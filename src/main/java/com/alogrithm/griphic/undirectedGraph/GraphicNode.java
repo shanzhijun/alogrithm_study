@@ -1,4 +1,4 @@
-package com.alogrithm.griphic;
+package com.alogrithm.griphic.undirectedGraph;
 
 /**
  * 图节点
