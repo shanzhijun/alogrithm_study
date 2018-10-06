@@ -1,4 +1,4 @@
-package com.alogrithm.griphic.bfs_impl;
+package com.alogrithm.griphic.undirectedGraph.bfs_impl;
 
 import com.alogrithm.griphic.undirectedGraph.GraphicImpl;
 

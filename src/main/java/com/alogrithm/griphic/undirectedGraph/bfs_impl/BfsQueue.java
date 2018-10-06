@@ -1,4 +1,4 @@
-package com.alogrithm.griphic.bfs_impl;
+package com.alogrithm.griphic.undirectedGraph.bfs_impl;
 
 /**
  * 广度优先搜索的队列

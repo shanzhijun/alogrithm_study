@@ -1,6 +1,4 @@
-package com.alogrithm.griphic.bfs_impl;
-
-import com.alogrithm.griphic.dfs_impl.DfsGraphicImpl;
+package com.alogrithm.griphic.undirectedGraph.bfs_impl;
 
 public class BfsGraphicImplTest {
     public static void  main(String[] args){
