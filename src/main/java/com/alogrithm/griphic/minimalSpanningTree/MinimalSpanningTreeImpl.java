@@ -1,6 +1,6 @@
 package com.alogrithm.griphic.minimalSpanningTree;
 
-import com.alogrithm.griphic.dfs_impl.DfsGraphicImpl;
+import com.alogrithm.griphic.undirectedGraph.dfs_impl.DfsGraphicImpl;
 
 /**
  * 最小生成树实现

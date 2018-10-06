@@ -1,7 +1,5 @@
 package com.alogrithm.griphic.minimalSpanningTree;
 
-import com.alogrithm.griphic.dfs_impl.DfsGraphicImpl;
-
 public class MinimalSpanningTreeImplTest {
     public static void  main(String[] args){
         MinimalSpanningTreeImpl graphic=new MinimalSpanningTreeImpl();
