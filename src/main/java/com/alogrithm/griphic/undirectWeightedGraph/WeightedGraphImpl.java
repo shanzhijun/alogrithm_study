@@ -1,8 +1,6 @@
-package com.alogrithm.griphic.weightedGraph;
+package com.alogrithm.griphic.undirectWeightedGraph;
 
 import com.alogrithm.griphic.GraphicNode;
-
-import javax.sound.midi.Soundbank;
 
 /**
  * 带权图实现

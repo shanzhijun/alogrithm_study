@@ -1,4 +1,4 @@
-package com.alogrithm.griphic.weightedGraph;
+package com.alogrithm.griphic.undirectWeightedGraph;
 
 /**
  * 带权图的边
