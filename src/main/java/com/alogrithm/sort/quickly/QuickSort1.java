@@ -39,7 +39,7 @@ public class QuickSort1 extends BaseSort {
     }
 
     /**
-     * 使用最右边的值作为基准点进行划分的快速排序
+     * 使用三项数据取中的中间值作为基准点进行划分的快速排序
      *
      * @param leftIndex
      * @param rightIndex
