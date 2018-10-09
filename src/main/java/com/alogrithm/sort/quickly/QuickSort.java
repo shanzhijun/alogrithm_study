@@ -49,7 +49,7 @@ public class QuickSort extends BaseSort {
 
 
             recQuickSort(leftIndex,position-1);
-            recQuickSort(position,rightIndex);
+            recQuickSort(position+1,rightIndex);
 
         }
     }
