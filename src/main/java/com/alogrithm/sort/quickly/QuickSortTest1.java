@@ -1,4 +1,4 @@
-package com.alogrithm.sort.quickly.divideImpl;
+package com.alogrithm.sort.quickly;
 
 import com.alogrithm.sort.quickly.QuickSort;
 import com.alogrithm.sort.quickly.QuickSort1;

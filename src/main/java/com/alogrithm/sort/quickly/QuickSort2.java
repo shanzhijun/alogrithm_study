@@ -6,11 +6,11 @@ import com.alogrithm.sort.BaseSort;
 /**
  * 快速排序O(nlgn)
  */
-public class QuickSort1 extends BaseSort {
+public class QuickSort2 extends BaseSort {
     private int[] theArray;
     private int nElems;
 
-    public QuickSort1(int size) {
+    public QuickSort2(int size) {
         theArray = new int[size];
     }
 
@@ -39,36 +39,51 @@ public class QuickSort1 extends BaseSort {
     }
 
     /**
-     * 使用最右边的值作为基准点进行划分的快速排序
+     * 数量少的元素 使用插入排序
      *
      * @param leftIndex
      * @param rightIndex
      */
     public void recQuickSort(int leftIndex, int rightIndex) {
         int size = rightIndex - leftIndex + 1;
-        if (size <= 3) {
-            //手工排序
-            manualSort(leftIndex, rightIndex);
+        if (size <= 10) {
+            //插入排序
+            insertSort(leftIndex, rightIndex);
         } else {
-            int mValue=getMValue(leftIndex,rightIndex);
+            int mValue = getMValue(leftIndex, rightIndex);
 
             int position = divide(leftIndex, rightIndex, mValue);
 
             recQuickSort(leftIndex, position - 1);
-            recQuickSort(position + 1, rightIndex);
+            recQuickSort(position, rightIndex);
         }
 
 
     }
 
+    private void insertSort(int leftIndex, int rightIndex) {
+        for (int i = leftIndex; i < rightIndex; i++) {
+            for (int j = i+1; j>leftIndex; j--) {
+                if (theArray[j] < theArray[j-1]) {
+                    int temp = theArray[j];
+                    theArray[j] = theArray[j-1];
+                    theArray[j-1] = temp;
+                }else{
+                    break;
+                }
+            }
+        }
+    }
+
     /**
      * 三项数据取中
+     *
      * @param leftIndex
      * @param rightIndex
      * @return
      */
-    public int getMValue(int leftIndex,int rightIndex){
-        int mIndex=(leftIndex+rightIndex)/2;
+    public int getMValue(int leftIndex, int rightIndex) {
+        int mIndex = (leftIndex + rightIndex) / 2;
         if (theArray[leftIndex] > theArray[mIndex]) {
             swap(leftIndex, mIndex);
         }
@@ -78,12 +93,12 @@ public class QuickSort1 extends BaseSort {
         }
 
         if (theArray[rightIndex] < theArray[mIndex]) {
-            swap(mIndex,rightIndex);
+            swap(mIndex, rightIndex);
         }
 
-        swap(mIndex,rightIndex-1);
-        display();
-        return theArray[rightIndex-1];
+        swap(mIndex, rightIndex - 1);
+
+        return theArray[rightIndex - 1];
     }
 
     /**
@@ -98,10 +113,10 @@ public class QuickSort1 extends BaseSort {
             return;
         }
         if (size == 2) {
-          if(theArray[leftIndex] > theArray[rightIndex]){
-              swap(leftIndex,rightIndex);
+            if (theArray[leftIndex] > theArray[rightIndex]) {
+                swap(leftIndex, rightIndex);
 
-          }
+            }
         } else {
             if (theArray[leftIndex] > theArray[rightIndex - 1]) {
                 swap(leftIndex, rightIndex - 1);
@@ -117,7 +132,7 @@ public class QuickSort1 extends BaseSort {
 
     public int divide(int left, int right, int pivot) {
         int leftIndex = left;
-        int rightIndex = right-1;
+        int rightIndex = right - 1;
         while (true) {
             while (leftIndex < rightIndex && theArray[++leftIndex] < pivot) ;
             while (rightIndex > 0 && theArray[--rightIndex] > pivot) ;
@@ -128,7 +143,7 @@ public class QuickSort1 extends BaseSort {
             }
         }
 
-        swap(leftIndex, right-1);
+        swap(leftIndex, right - 1);
 
         return leftIndex;
     }
