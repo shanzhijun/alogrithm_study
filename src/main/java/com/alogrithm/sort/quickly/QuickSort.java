@@ -58,7 +58,7 @@ public class QuickSort extends BaseSort {
         int leftIndex=left-1;
         int rightIndex=right;
         while(true){
-            while(theArray[++leftIndex]<pivot);
+            while(leftIndex<rightIndex && theArray[++leftIndex]<pivot);
             while(rightIndex>0 && theArray[--rightIndex]>pivot);
             if(leftIndex>=rightIndex){
                break;
@@ -67,14 +67,14 @@ public class QuickSort extends BaseSort {
             }
         }
 
-        swap(leftIndex,rightIndex);
+        swap(leftIndex,right);
 
         return leftIndex;
     }
 
     public void swap(int left,int right){
-        theArray[left]=theArray[left]^ theArray[right];
-        theArray[right]=theArray[left]^ theArray[right];
-        theArray[left]=theArray[left]^ theArray[right];
+        int temp= theArray[left];
+        theArray[left]=theArray[right];
+        theArray[right]=temp;
     }
 }
