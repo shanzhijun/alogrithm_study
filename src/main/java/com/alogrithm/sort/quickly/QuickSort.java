@@ -39,6 +39,11 @@ public class QuickSort extends BaseSort {
         recQuickSort(0,nElems-1);
     }
 
+    /**
+     * 使用最右边的值作为基准点进行划分的快速排序
+     * @param leftIndex
+     * @param rightIndex
+     */
     public void recQuickSort(int leftIndex,int rightIndex){
 
         if(rightIndex-leftIndex<=0){
